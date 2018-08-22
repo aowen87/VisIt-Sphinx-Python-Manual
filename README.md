@@ -22,7 +22,7 @@ This manual is comprised of many restructuredText files (.rst), some of which ca
 Information about attributes, events, and functions are pulled directly from VisIt and must be updated through VisIt. 
 
 ### Generating 
-To generate attributes, events, and functions, simply evoke the sphinx\_extractor script with your VisIt src/bin directory as an argument like so:
+To generate attributes, events, and functions, simply run the sphinx\_extractor script with your VisIt src/bin directory as an argument like so:
 
     python sphinx_extractor.py path/to/visit/src/bin
 
