@@ -22,6 +22,16 @@ This manual is comprised of many restructuredText files (.rst), some of which ca
 Information about attributes, events, and functions are pulled directly from VisIt and must be updated through VisIt. 
 
 ### Generating 
+**IMPORTANT**: before running the generation script, you need to check that the visit path is set up appropriately. To do so, open sphinx\_extractor.py, and look for the following flag near the top of the file:
+
+    ###
+    ### SET UP SCRIPT SO IT CAN RUN ON YOUR MACHINE.  THIS WILL CHANGE FROM PLATFORM TO PLATFORM
+    ### AND RELEASE TO RELEASE
+    ###
+    sys.path.insert(0, <path>)
+
+You may need to insert the appropriate path if the current one does not exist on your machine. The path should point to VisIt's library site-packages. 
+
 To generate attributes, events, and functions, simply run the sphinx\_extractor script with your VisIt src/bin directory as an argument like so:
 
     python sphinx_extractor.py path/to/visit/src/bin
