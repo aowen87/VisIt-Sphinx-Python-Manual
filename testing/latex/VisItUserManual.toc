@@ -1,0 +1,446 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction to VisIt}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Overview}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Manual chapters}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Understanding how VisIt works}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Starting VisIt}{5}{section.1.4}
+\contentsline {section}{\numberline {1.5}Getting started}{5}{section.1.5}
+\contentsline {chapter}{\numberline {2}Python}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Overview}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Indentation}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Comments}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}Identifiers}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}Data types}{8}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Strings}{8}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Tuples}{8}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Lists}{8}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Dictionaries}{9}{subsection.2.5.4}
+\contentsline {section}{\numberline {2.6}Control flow}{9}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}if/elif/else}{9}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}For loop}{10}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}While loop}{10}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.7}Functions}{10}{section.2.7}
+\contentsline {chapter}{\numberline {3}Quick Recipes}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Overview}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}How to start}{11}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Using session files}{11}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Getting something on the screen}{11}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Saving images}{12}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Setting the output image characteristics}{12}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Saving an image}{12}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Working with databases}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Opening a database}{13}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Opening a database at late time}{13}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Opening a virtual database}{13}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Opening a remote database}{14}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Opening a compute engine}{14}{subsection.3.4.5}
+\contentsline {section}{\numberline {3.5}Working with plots}{14}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Creating a plot}{14}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Plotting materials}{15}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Setting plot attributes}{15}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Working with multiple plots}{15}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Plots in the error state}{16}{subsection.3.5.5}
+\contentsline {section}{\numberline {3.6}Operators}{16}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Adding operators}{16}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Setting operator attributes}{17}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}Quantitative operations}{17}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Defining expressions}{17}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Pick}{18}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Lineout}{18}{subsection.3.7.3}
+\contentsline {subsection}{\numberline {3.7.4}Query}{18}{subsection.3.7.4}
+\contentsline {subsection}{\numberline {3.7.5}Finding the min and the max}{18}{subsection.3.7.5}
+\contentsline {section}{\numberline {3.8}Subsetting}{19}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Turning off domains}{19}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Turning off materials}{20}{subsection.3.8.2}
+\contentsline {section}{\numberline {3.9}View}{20}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Setting the 2D view}{20}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Setting the 3D view}{20}{subsection.3.9.2}
+\contentsline {subsection}{\numberline {3.9.3}Flying around plots}{21}{subsection.3.9.3}
+\contentsline {section}{\numberline {3.10}Working with annotations}{22}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Using gradient background colors}{23}{subsection.3.10.1}
+\contentsline {subsection}{\numberline {3.10.2}Adding a banner}{23}{subsection.3.10.2}
+\contentsline {subsection}{\numberline {3.10.3}Adding a time slider}{24}{subsection.3.10.3}
+\contentsline {subsection}{\numberline {3.10.4}Adding a logo}{25}{subsection.3.10.4}
+\contentsline {chapter}{\numberline {4}Functions}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}ActivateDatabase}{27}{section.4.1}
+\contentsline {section}{\numberline {4.2}AddArgument}{28}{section.4.2}
+\contentsline {section}{\numberline {4.3}AddMachineProfile}{29}{section.4.3}
+\contentsline {section}{\numberline {4.4}AddOperator}{29}{section.4.4}
+\contentsline {section}{\numberline {4.5}AddPlot}{30}{section.4.5}
+\contentsline {section}{\numberline {4.6}AddWindow}{31}{section.4.6}
+\contentsline {section}{\numberline {4.7}AlterDatabaseCorrelation}{32}{section.4.7}
+\contentsline {section}{\numberline {4.8}ApplyNamedSelection}{34}{section.4.8}
+\contentsline {section}{\numberline {4.9}ChangeActivePlotsVar}{35}{section.4.9}
+\contentsline {section}{\numberline {4.10}CheckForNewStates}{35}{section.4.10}
+\contentsline {section}{\numberline {4.11}ChooseCenterOfRotation}{36}{section.4.11}
+\contentsline {section}{\numberline {4.12}ClearAllWindows}{37}{section.4.12}
+\contentsline {section}{\numberline {4.13}ClearCache}{38}{section.4.13}
+\contentsline {section}{\numberline {4.14}ClearCacheForAllEngines}{39}{section.4.14}
+\contentsline {section}{\numberline {4.15}ClearMacros}{41}{section.4.15}
+\contentsline {section}{\numberline {4.16}ClearPickPoints}{41}{section.4.16}
+\contentsline {section}{\numberline {4.17}ClearReferenceLines}{42}{section.4.17}
+\contentsline {section}{\numberline {4.18}ClearViewKeyframes}{42}{section.4.18}
+\contentsline {section}{\numberline {4.19}ClearWindow}{43}{section.4.19}
+\contentsline {section}{\numberline {4.20}CloneWindow}{44}{section.4.20}
+\contentsline {section}{\numberline {4.21}Close}{45}{section.4.21}
+\contentsline {section}{\numberline {4.22}CloseComputeEngine}{45}{section.4.22}
+\contentsline {section}{\numberline {4.23}CloseDatabase}{46}{section.4.23}
+\contentsline {section}{\numberline {4.24}ColorTableNames}{47}{section.4.24}
+\contentsline {section}{\numberline {4.25}ConstructDataBinning}{48}{section.4.25}
+\contentsline {section}{\numberline {4.26}CopyAnnotationsToWindow}{49}{section.4.26}
+\contentsline {section}{\numberline {4.27}CopyLightingToWindow}{50}{section.4.27}
+\contentsline {section}{\numberline {4.28}CopyPlotsToWindow}{51}{section.4.28}
+\contentsline {section}{\numberline {4.29}CopyViewToWindow}{52}{section.4.29}
+\contentsline {section}{\numberline {4.30}CreateAnnotationObject}{54}{section.4.30}
+\contentsline {section}{\numberline {4.31}CreateDatabaseCorrelation}{55}{section.4.31}
+\contentsline {section}{\numberline {4.32}CreateNamedSelection}{57}{section.4.32}
+\contentsline {section}{\numberline {4.33}DatabasePlugins}{58}{section.4.33}
+\contentsline {section}{\numberline {4.34}DeIconifyAllWindows}{59}{section.4.34}
+\contentsline {section}{\numberline {4.35}DefineArrayExpression}{59}{section.4.35}
+\contentsline {section}{\numberline {4.36}DefineCurveExpression}{60}{section.4.36}
+\contentsline {section}{\numberline {4.37}DefineMaterialExpression}{62}{section.4.37}
+\contentsline {section}{\numberline {4.38}DefineMeshExpression}{63}{section.4.38}
+\contentsline {section}{\numberline {4.39}DefinePythonExpression}{64}{section.4.39}
+\contentsline {section}{\numberline {4.40}DefineScalarExpression}{65}{section.4.40}
+\contentsline {section}{\numberline {4.41}DefineSpeciesExpression}{66}{section.4.41}
+\contentsline {section}{\numberline {4.42}DefineTensorExpression}{67}{section.4.42}
+\contentsline {section}{\numberline {4.43}DefineVectorExpression}{68}{section.4.43}
+\contentsline {section}{\numberline {4.44}DeleteActivePlots}{69}{section.4.44}
+\contentsline {section}{\numberline {4.45}DeleteAllPlots}{70}{section.4.45}
+\contentsline {section}{\numberline {4.46}DeleteDatabaseCorrelation}{70}{section.4.46}
+\contentsline {section}{\numberline {4.47}DeleteExpression}{71}{section.4.47}
+\contentsline {section}{\numberline {4.48}DeleteNamedSelection}{72}{section.4.48}
+\contentsline {section}{\numberline {4.49}DeletePlotDatabaseKeyframe}{73}{section.4.49}
+\contentsline {section}{\numberline {4.50}DeletePlotKeyframe}{74}{section.4.50}
+\contentsline {section}{\numberline {4.51}DeleteViewKeyframe}{76}{section.4.51}
+\contentsline {section}{\numberline {4.52}DeleteWindow}{77}{section.4.52}
+\contentsline {section}{\numberline {4.53}DemoteOperator}{77}{section.4.53}
+\contentsline {section}{\numberline {4.54}DisableRedraw}{79}{section.4.54}
+\contentsline {section}{\numberline {4.55}DrawPlots}{79}{section.4.55}
+\contentsline {section}{\numberline {4.56}EnableTool}{80}{section.4.56}
+\contentsline {section}{\numberline {4.57}ExecuteMacro}{81}{section.4.57}
+\contentsline {section}{\numberline {4.58}ExportDatabase}{82}{section.4.58}
+\contentsline {section}{\numberline {4.59}Expressions}{83}{section.4.59}
+\contentsline {section}{\numberline {4.60}GetActiveContinuousColorTable}{83}{section.4.60}
+\contentsline {section}{\numberline {4.61}GetActiveDiscreteColorTable}{84}{section.4.61}
+\contentsline {section}{\numberline {4.62}GetActiveTimeSlider}{85}{section.4.62}
+\contentsline {section}{\numberline {4.63}GetAnimationAttributes}{86}{section.4.63}
+\contentsline {section}{\numberline {4.64}GetAnimationTimeout}{86}{section.4.64}
+\contentsline {section}{\numberline {4.65}GetAnnotationAttributes}{87}{section.4.65}
+\contentsline {section}{\numberline {4.66}GetAnnotationObject}{88}{section.4.66}
+\contentsline {section}{\numberline {4.67}GetAnnotationObjectNames}{88}{section.4.67}
+\contentsline {section}{\numberline {4.68}GetCallbackArgumentCount}{89}{section.4.68}
+\contentsline {section}{\numberline {4.69}GetCallbackNames}{90}{section.4.69}
+\contentsline {section}{\numberline {4.70}GetDatabaseNStates}{90}{section.4.70}
+\contentsline {section}{\numberline {4.71}GetDebugLevel}{91}{section.4.71}
+\contentsline {section}{\numberline {4.72}GetDefaultFileOpenOptions}{92}{section.4.72}
+\contentsline {section}{\numberline {4.73}GetDomains}{92}{section.4.73}
+\contentsline {section}{\numberline {4.74}GetEngineList}{93}{section.4.74}
+\contentsline {section}{\numberline {4.75}GetEngineProperties}{94}{section.4.75}
+\contentsline {section}{\numberline {4.76}GetGlobalAttributes}{95}{section.4.76}
+\contentsline {section}{\numberline {4.77}GetGlobalLineoutAttributes}{96}{section.4.77}
+\contentsline {section}{\numberline {4.78}GetInteractorAttributes}{96}{section.4.78}
+\contentsline {section}{\numberline {4.79}GetKeyframeAttributes}{97}{section.4.79}
+\contentsline {section}{\numberline {4.80}GetLastError}{98}{section.4.80}
+\contentsline {section}{\numberline {4.81}GetLight}{98}{section.4.81}
+\contentsline {section}{\numberline {4.82}GetLocalHostName}{99}{section.4.82}
+\contentsline {section}{\numberline {4.83}GetLocalUserName}{100}{section.4.83}
+\contentsline {section}{\numberline {4.84}GetMachineProfile}{100}{section.4.84}
+\contentsline {section}{\numberline {4.85}GetMachineProfileNames}{101}{section.4.85}
+\contentsline {section}{\numberline {4.86}GetMaterialAttributes}{101}{section.4.86}
+\contentsline {section}{\numberline {4.87}GetMaterials}{102}{section.4.87}
+\contentsline {section}{\numberline {4.88}GetMeshManagementAttributes}{103}{section.4.88}
+\contentsline {section}{\numberline {4.89}GetMetaData}{103}{section.4.89}
+\contentsline {section}{\numberline {4.90}GetNumPlots}{104}{section.4.90}
+\contentsline {section}{\numberline {4.91}GetOperatorOptions}{105}{section.4.91}
+\contentsline {section}{\numberline {4.92}GetPickAttributes}{105}{section.4.92}
+\contentsline {section}{\numberline {4.93}GetPickOutput}{106}{section.4.93}
+\contentsline {section}{\numberline {4.94}GetPickOutputObject}{107}{section.4.94}
+\contentsline {section}{\numberline {4.95}GetPipelineCachingMode}{108}{section.4.95}
+\contentsline {section}{\numberline {4.96}GetPlotInformation}{108}{section.4.96}
+\contentsline {section}{\numberline {4.97}GetPlotList}{109}{section.4.97}
+\contentsline {section}{\numberline {4.98}GetPlotOptions}{110}{section.4.98}
+\contentsline {section}{\numberline {4.99}GetPreferredFileFormats}{110}{section.4.99}
+\contentsline {section}{\numberline {4.100}GetQueryOutputObject}{111}{section.4.100}
+\contentsline {section}{\numberline {4.101}GetQueryOutputString}{112}{section.4.101}
+\contentsline {section}{\numberline {4.102}GetQueryOutputValue}{112}{section.4.102}
+\contentsline {section}{\numberline {4.103}GetQueryOutputXML}{113}{section.4.103}
+\contentsline {section}{\numberline {4.104}GetQueryOverTimeAttributes}{114}{section.4.104}
+\contentsline {section}{\numberline {4.105}GetQueryParameters}{115}{section.4.105}
+\contentsline {section}{\numberline {4.106}GetRenderingAttributes}{116}{section.4.106}
+\contentsline {section}{\numberline {4.107}GetSaveWindowAttributes}{116}{section.4.107}
+\contentsline {section}{\numberline {4.108}GetSelection}{117}{section.4.108}
+\contentsline {section}{\numberline {4.109}GetSelectionList}{118}{section.4.109}
+\contentsline {section}{\numberline {4.110}GetSelectionSummary}{119}{section.4.110}
+\contentsline {section}{\numberline {4.111}GetTimeSliders}{119}{section.4.111}
+\contentsline {section}{\numberline {4.112}GetUltraScript}{120}{section.4.112}
+\contentsline {section}{\numberline {4.113}GetView2D}{120}{section.4.113}
+\contentsline {section}{\numberline {4.114}GetView3D}{121}{section.4.114}
+\contentsline {section}{\numberline {4.115}GetViewAxisArray}{122}{section.4.115}
+\contentsline {section}{\numberline {4.116}GetViewCurve}{123}{section.4.116}
+\contentsline {section}{\numberline {4.117}GetWindowInformation}{124}{section.4.117}
+\contentsline {section}{\numberline {4.118}HideActivePlots}{125}{section.4.118}
+\contentsline {section}{\numberline {4.119}HideToolbars}{125}{section.4.119}
+\contentsline {section}{\numberline {4.120}IconifyAllWindows}{126}{section.4.120}
+\contentsline {section}{\numberline {4.121}InitializeNamedSelectionVariables}{127}{section.4.121}
+\contentsline {section}{\numberline {4.122}InvertBackgroundColor}{127}{section.4.122}
+\contentsline {section}{\numberline {4.123}Launch}{128}{section.4.123}
+\contentsline {section}{\numberline {4.124}LaunchNowin}{129}{section.4.124}
+\contentsline {section}{\numberline {4.125}Lineout}{129}{section.4.125}
+\contentsline {section}{\numberline {4.126}ListDomains}{131}{section.4.126}
+\contentsline {section}{\numberline {4.127}ListMaterials}{131}{section.4.127}
+\contentsline {section}{\numberline {4.128}ListPlots}{132}{section.4.128}
+\contentsline {section}{\numberline {4.129}LoadAttribute}{132}{section.4.129}
+\contentsline {section}{\numberline {4.130}LoadNamedSelection}{133}{section.4.130}
+\contentsline {section}{\numberline {4.131}LoadUltra}{134}{section.4.131}
+\contentsline {section}{\numberline {4.132}LocalNameSpace}{135}{section.4.132}
+\contentsline {section}{\numberline {4.133}LongFileName}{136}{section.4.133}
+\contentsline {section}{\numberline {4.134}MoveAndResizeWindow}{136}{section.4.134}
+\contentsline {section}{\numberline {4.135}MovePlotDatabaseKeyframe}{137}{section.4.135}
+\contentsline {section}{\numberline {4.136}MovePlotKeyframe}{139}{section.4.136}
+\contentsline {section}{\numberline {4.137}MovePlotOrderTowardFirst}{140}{section.4.137}
+\contentsline {section}{\numberline {4.138}MovePlotOrderTowardLast}{141}{section.4.138}
+\contentsline {section}{\numberline {4.139}MoveViewKeyframe}{141}{section.4.139}
+\contentsline {section}{\numberline {4.140}MoveWindow}{142}{section.4.140}
+\contentsline {section}{\numberline {4.141}NodePick}{143}{section.4.141}
+\contentsline {section}{\numberline {4.142}NumColorTableNames}{145}{section.4.142}
+\contentsline {section}{\numberline {4.143}NumOperatorPlugins}{146}{section.4.143}
+\contentsline {section}{\numberline {4.144}NumPlotPlugins}{146}{section.4.144}
+\contentsline {section}{\numberline {4.145}OpenComputeEngine}{147}{section.4.145}
+\contentsline {section}{\numberline {4.146}OpenDatabase}{148}{section.4.146}
+\contentsline {section}{\numberline {4.147}OpenMDServer}{149}{section.4.147}
+\contentsline {section}{\numberline {4.148}OperatorPlugins}{151}{section.4.148}
+\contentsline {section}{\numberline {4.149}OverlayDatabase}{151}{section.4.149}
+\contentsline {section}{\numberline {4.150}Pick}{152}{section.4.150}
+\contentsline {section}{\numberline {4.151}PickByGlobalNode}{154}{section.4.151}
+\contentsline {section}{\numberline {4.152}PickByGlobalZone}{156}{section.4.152}
+\contentsline {section}{\numberline {4.153}PickByNode}{158}{section.4.153}
+\contentsline {section}{\numberline {4.154}PickByNodeLabel}{160}{section.4.154}
+\contentsline {section}{\numberline {4.155}PickByZone}{162}{section.4.155}
+\contentsline {section}{\numberline {4.156}PickByZoneLabel}{164}{section.4.156}
+\contentsline {section}{\numberline {4.157}PlotPlugins}{166}{section.4.157}
+\contentsline {section}{\numberline {4.158}PointPick}{167}{section.4.158}
+\contentsline {section}{\numberline {4.159}PrintWindow}{169}{section.4.159}
+\contentsline {section}{\numberline {4.160}PromoteOperator}{170}{section.4.160}
+\contentsline {section}{\numberline {4.161}PythonQuery}{171}{section.4.161}
+\contentsline {section}{\numberline {4.162}Queries}{172}{section.4.162}
+\contentsline {section}{\numberline {4.163}QueriesOverTime}{172}{section.4.163}
+\contentsline {section}{\numberline {4.164}Query}{173}{section.4.164}
+\contentsline {section}{\numberline {4.165}QueryOverTime}{174}{section.4.165}
+\contentsline {section}{\numberline {4.166}ReOpenDatabase}{175}{section.4.166}
+\contentsline {section}{\numberline {4.167}ReadHostProfilesFromDirectory}{176}{section.4.167}
+\contentsline {section}{\numberline {4.168}RecenterView}{177}{section.4.168}
+\contentsline {section}{\numberline {4.169}RedoView}{178}{section.4.169}
+\contentsline {section}{\numberline {4.170}RedrawWindow}{178}{section.4.170}
+\contentsline {section}{\numberline {4.171}ReenamePickLabel}{179}{section.4.171}
+\contentsline {section}{\numberline {4.172}RegisterCallback}{180}{section.4.172}
+\contentsline {section}{\numberline {4.173}RegisterMacro}{180}{section.4.173}
+\contentsline {section}{\numberline {4.174}RemoveAllOperators}{181}{section.4.174}
+\contentsline {section}{\numberline {4.175}RemoveLastOperator}{182}{section.4.175}
+\contentsline {section}{\numberline {4.176}RemoveMachineProfile}{184}{section.4.176}
+\contentsline {section}{\numberline {4.177}RemoveOperator}{184}{section.4.177}
+\contentsline {section}{\numberline {4.178}RemovePicks}{185}{section.4.178}
+\contentsline {section}{\numberline {4.179}ReplaceDatabase}{186}{section.4.179}
+\contentsline {section}{\numberline {4.180}ResetLineoutColor}{187}{section.4.180}
+\contentsline {section}{\numberline {4.181}ResetOperatorOptions}{187}{section.4.181}
+\contentsline {section}{\numberline {4.182}ResetPickLetter}{188}{section.4.182}
+\contentsline {section}{\numberline {4.183}ResetPlotOptions}{189}{section.4.183}
+\contentsline {section}{\numberline {4.184}ResetView}{190}{section.4.184}
+\contentsline {section}{\numberline {4.185}ResizeWindow}{190}{section.4.185}
+\contentsline {section}{\numberline {4.186}RestoreSession}{191}{section.4.186}
+\contentsline {section}{\numberline {4.187}RestoreSessionWithDifferentSources}{193}{section.4.187}
+\contentsline {section}{\numberline {4.188}SaveAttribute}{194}{section.4.188}
+\contentsline {section}{\numberline {4.189}SaveNamedSelection}{195}{section.4.189}
+\contentsline {section}{\numberline {4.190}SaveSession}{195}{section.4.190}
+\contentsline {section}{\numberline {4.191}SaveWindow}{196}{section.4.191}
+\contentsline {section}{\numberline {4.192}SendSimulationCommand}{197}{section.4.192}
+\contentsline {section}{\numberline {4.193}SetActiveContinuousColorTable}{198}{section.4.193}
+\contentsline {section}{\numberline {4.194}SetActiveDiscreteColorTable}{199}{section.4.194}
+\contentsline {section}{\numberline {4.195}SetActivePlots}{200}{section.4.195}
+\contentsline {section}{\numberline {4.196}SetActiveTimeSlider}{201}{section.4.196}
+\contentsline {section}{\numberline {4.197}SetActiveWindow}{202}{section.4.197}
+\contentsline {section}{\numberline {4.198}SetAnimationTimeout}{203}{section.4.198}
+\contentsline {section}{\numberline {4.199}SetAnnotationAttributes}{203}{section.4.199}
+\contentsline {section}{\numberline {4.200}SetBackendType}{204}{section.4.200}
+\contentsline {section}{\numberline {4.201}SetCenterOfRotation}{205}{section.4.201}
+\contentsline {section}{\numberline {4.202}SetColorTexturingEnabled}{206}{section.4.202}
+\contentsline {section}{\numberline {4.203}SetCreateMeshQualityExpressions}{207}{section.4.203}
+\contentsline {section}{\numberline {4.204}SetCreateTimeDerivativeExpressions}{207}{section.4.204}
+\contentsline {section}{\numberline {4.205}SetCreateVectorMagnitudeExpressions}{208}{section.4.205}
+\contentsline {section}{\numberline {4.206}SetDatabaseCorrelationOptions}{209}{section.4.206}
+\contentsline {section}{\numberline {4.207}SetDebugLevel}{211}{section.4.207}
+\contentsline {section}{\numberline {4.208}SetDefaultAnnotationAttributes}{212}{section.4.208}
+\contentsline {section}{\numberline {4.209}SetDefaultFileOpenOptions}{212}{section.4.209}
+\contentsline {section}{\numberline {4.210}SetDefaultInteractorAttributes}{213}{section.4.210}
+\contentsline {section}{\numberline {4.211}SetDefaultMaterialAttributes}{214}{section.4.211}
+\contentsline {section}{\numberline {4.212}SetDefaultMeshManagementAttributes}{215}{section.4.212}
+\contentsline {section}{\numberline {4.213}SetDefaultOperatorOptions}{216}{section.4.213}
+\contentsline {section}{\numberline {4.214}SetDefaultPickAttributes}{218}{section.4.214}
+\contentsline {section}{\numberline {4.215}SetDefaultPlotOptions}{219}{section.4.215}
+\contentsline {section}{\numberline {4.216}SetGlobalLineoutAttributes}{220}{section.4.216}
+\contentsline {section}{\numberline {4.217}SetInteractorAttributes}{220}{section.4.217}
+\contentsline {section}{\numberline {4.218}SetKeyframeAttributes}{221}{section.4.218}
+\contentsline {section}{\numberline {4.219}SetLight}{222}{section.4.219}
+\contentsline {section}{\numberline {4.220}SetMachineProfile}{223}{section.4.220}
+\contentsline {section}{\numberline {4.221}SetMaterialAttributes}{224}{section.4.221}
+\contentsline {section}{\numberline {4.222}SetMeshManagementAttributes}{225}{section.4.222}
+\contentsline {section}{\numberline {4.223}SetNamedSelectionAutoApply}{226}{section.4.223}
+\contentsline {section}{\numberline {4.224}SetOperatorOptions}{226}{section.4.224}
+\contentsline {section}{\numberline {4.225}SetPickAttributes}{228}{section.4.225}
+\contentsline {section}{\numberline {4.226}SetPipelineCachingMode}{229}{section.4.226}
+\contentsline {section}{\numberline {4.227}SetPlotDatabaseState}{229}{section.4.227}
+\contentsline {section}{\numberline {4.228}SetPlotDescription}{231}{section.4.228}
+\contentsline {section}{\numberline {4.229}SetPlotFollowsTime}{231}{section.4.229}
+\contentsline {section}{\numberline {4.230}SetPlotFrameRange}{232}{section.4.230}
+\contentsline {section}{\numberline {4.231}SetPlotOptions}{234}{section.4.231}
+\contentsline {section}{\numberline {4.232}SetPlotOrderToFirst}{234}{section.4.232}
+\contentsline {section}{\numberline {4.233}SetPlotOrderToLast}{235}{section.4.233}
+\contentsline {section}{\numberline {4.234}SetPlotSILRestriction}{236}{section.4.234}
+\contentsline {section}{\numberline {4.235}SetPrecisionType}{237}{section.4.235}
+\contentsline {section}{\numberline {4.236}SetPreferredFileFormats}{237}{section.4.236}
+\contentsline {section}{\numberline {4.237}SetPrinterAttributes}{238}{section.4.237}
+\contentsline {section}{\numberline {4.238}SetQueryFloatFormat}{239}{section.4.238}
+\contentsline {section}{\numberline {4.239}SetQueryOutputToObject}{240}{section.4.239}
+\contentsline {section}{\numberline {4.240}SetQueryOutputToString}{241}{section.4.240}
+\contentsline {section}{\numberline {4.241}SetQueryOutputToValue}{241}{section.4.241}
+\contentsline {section}{\numberline {4.242}SetQueryOverTimeAttributes}{242}{section.4.242}
+\contentsline {section}{\numberline {4.243}SetRemoveDuplicateNodes}{243}{section.4.243}
+\contentsline {section}{\numberline {4.244}SetRenderingAttributes}{244}{section.4.244}
+\contentsline {section}{\numberline {4.245}SetSaveWindowAttributes}{245}{section.4.245}
+\contentsline {section}{\numberline {4.246}SetTimeSliderState}{246}{section.4.246}
+\contentsline {section}{\numberline {4.247}SetTreatAllDBsAsTimeVarying}{247}{section.4.247}
+\contentsline {section}{\numberline {4.248}SetTryHarderCyclesTimes}{247}{section.4.248}
+\contentsline {section}{\numberline {4.249}SetUltraScript}{248}{section.4.249}
+\contentsline {section}{\numberline {4.250}SetView2D}{249}{section.4.250}
+\contentsline {section}{\numberline {4.251}SetView3D}{250}{section.4.251}
+\contentsline {section}{\numberline {4.252}SetViewAxisArray}{250}{section.4.252}
+\contentsline {section}{\numberline {4.253}SetViewCurve}{251}{section.4.253}
+\contentsline {section}{\numberline {4.254}SetViewExtentsType}{252}{section.4.254}
+\contentsline {section}{\numberline {4.255}SetViewKeyframe}{253}{section.4.255}
+\contentsline {section}{\numberline {4.256}SetWindowArea}{254}{section.4.256}
+\contentsline {section}{\numberline {4.257}SetWindowLayout}{255}{section.4.257}
+\contentsline {section}{\numberline {4.258}SetWindowMode}{256}{section.4.258}
+\contentsline {section}{\numberline {4.259}ShowAllWindows}{256}{section.4.259}
+\contentsline {section}{\numberline {4.260}ShowToolbars}{257}{section.4.260}
+\contentsline {section}{\numberline {4.261}Source}{258}{section.4.261}
+\contentsline {section}{\numberline {4.262}SuppressMessages}{258}{section.4.262}
+\contentsline {section}{\numberline {4.263}SuppressQueryOutputOff}{259}{section.4.263}
+\contentsline {section}{\numberline {4.264}SuppressQueryOutputOn}{260}{section.4.264}
+\contentsline {section}{\numberline {4.265}TimeSliderGetNStates}{261}{section.4.265}
+\contentsline {section}{\numberline {4.266}TimeSliderNextState}{261}{section.4.266}
+\contentsline {section}{\numberline {4.267}TimeSliderPreviousState}{262}{section.4.267}
+\contentsline {section}{\numberline {4.268}TimeSliderSetState}{262}{section.4.268}
+\contentsline {section}{\numberline {4.269}ToggleBoundingBoxMode}{263}{section.4.269}
+\contentsline {section}{\numberline {4.270}ToggleCameraViewMode}{265}{section.4.270}
+\contentsline {section}{\numberline {4.271}ToggleFullFrameMode}{266}{section.4.271}
+\contentsline {section}{\numberline {4.272}ToggleLockTime}{267}{section.4.272}
+\contentsline {section}{\numberline {4.273}ToggleLockTools}{268}{section.4.273}
+\contentsline {section}{\numberline {4.274}ToggleLockViewMode}{269}{section.4.274}
+\contentsline {section}{\numberline {4.275}ToggleMaintainViewMode}{270}{section.4.275}
+\contentsline {section}{\numberline {4.276}ToggleSpinMode}{271}{section.4.276}
+\contentsline {section}{\numberline {4.277}TurnDomainsOff}{272}{section.4.277}
+\contentsline {section}{\numberline {4.278}TurnDomainsOn}{273}{section.4.278}
+\contentsline {section}{\numberline {4.279}TurnMaterialsOff}{274}{section.4.279}
+\contentsline {section}{\numberline {4.280}TurnMaterialsOn}{275}{section.4.280}
+\contentsline {section}{\numberline {4.281}UndoView}{276}{section.4.281}
+\contentsline {section}{\numberline {4.282}UpdateNamedSelection}{277}{section.4.282}
+\contentsline {section}{\numberline {4.283}Version}{278}{section.4.283}
+\contentsline {section}{\numberline {4.284}WriteConfigFile}{278}{section.4.284}
+\contentsline {section}{\numberline {4.285}WriteScript}{279}{section.4.285}
+\contentsline {section}{\numberline {4.286}ZonePick}{279}{section.4.286}
+\contentsline {chapter}{\numberline {5}Attribute Reference}{283}{chapter.5}
+\contentsline {section}{\numberline {5.1}\textbf {AMRStitchCell}: \emph {AMRStitchCellAttributes()}}{283}{section.5.1}
+\contentsline {section}{\numberline {5.2}\textbf {Animation}: \emph {AnimationAttributes()}}{283}{section.5.2}
+\contentsline {section}{\numberline {5.3}\textbf {Annotation}: \emph {AnnotationAttributes()}}{284}{section.5.3}
+\contentsline {section}{\numberline {5.4}\textbf {Axis}: \emph {AxisAttributes()}}{290}{section.5.4}
+\contentsline {section}{\numberline {5.5}\textbf {AxisAlignedSlice4D}: \emph {AxisAlignedSlice4DAttributes()}}{291}{section.5.5}
+\contentsline {section}{\numberline {5.6}\textbf {Boundary}: \emph {BoundaryAttributes()}}{291}{section.5.6}
+\contentsline {section}{\numberline {5.7}\textbf {BoundaryOp}: \emph {BoundaryOpAttributes()}}{292}{section.5.7}
+\contentsline {section}{\numberline {5.8}\textbf {Box}: \emph {BoxAttributes()}}{292}{section.5.8}
+\contentsline {section}{\numberline {5.9}\textbf {CartographicProjection}: \emph {CartographicProjectionAttributes()}}{292}{section.5.9}
+\contentsline {section}{\numberline {5.10}\textbf {Clip}: \emph {ClipAttributes()}}{293}{section.5.10}
+\contentsline {section}{\numberline {5.11}\textbf {Cone}: \emph {ConeAttributes()}}{294}{section.5.11}
+\contentsline {section}{\numberline {5.12}\textbf {ConnectedComponents}: \emph {ConnectedComponentsAttributes()}}{294}{section.5.12}
+\contentsline {section}{\numberline {5.13}\textbf {ConstructDataBinning}: \emph {ConstructDataBinningAttributes()}}{294}{section.5.13}
+\contentsline {section}{\numberline {5.14}\textbf {Contour}: \emph {ContourAttributes()}}{295}{section.5.14}
+\contentsline {section}{\numberline {5.15}\textbf {CoordSwap}: \emph {CoordSwapAttributes()}}{298}{section.5.15}
+\contentsline {section}{\numberline {5.16}\textbf {CreateBonds}: \emph {CreateBondsAttributes()}}{299}{section.5.16}
+\contentsline {section}{\numberline {5.17}\textbf {Curve}: \emph {CurveAttributes()}}{299}{section.5.17}
+\contentsline {section}{\numberline {5.18}\textbf {Cylinder}: \emph {CylinderAttributes()}}{301}{section.5.18}
+\contentsline {section}{\numberline {5.19}\textbf {DataBinning}: \emph {DataBinningAttributes()}}{301}{section.5.19}
+\contentsline {section}{\numberline {5.20}\textbf {DeferExpression}: \emph {DeferExpressionAttributes()}}{303}{section.5.20}
+\contentsline {section}{\numberline {5.21}\textbf {Displace}: \emph {DisplaceAttributes()}}{303}{section.5.21}
+\contentsline {section}{\numberline {5.22}\textbf {DualMesh}: \emph {DualMeshAttributes()}}{303}{section.5.22}
+\contentsline {section}{\numberline {5.23}\textbf {Edge}: \emph {EdgeAttributes()}}{303}{section.5.23}
+\contentsline {section}{\numberline {5.24}\textbf {Elevate}: \emph {ElevateAttributes()}}{304}{section.5.24}
+\contentsline {section}{\numberline {5.25}\textbf {EllipsoidSlice}: \emph {EllipsoidSliceAttributes()}}{304}{section.5.25}
+\contentsline {section}{\numberline {5.26}\textbf {Explode}: \emph {ExplodeAttributes()}}{305}{section.5.26}
+\contentsline {section}{\numberline {5.27}\textbf {ExportDB}: \emph {ExportDBAttributes()}}{305}{section.5.27}
+\contentsline {section}{\numberline {5.28}\textbf {ExternalSurface}: \emph {ExternalSurfaceAttributes()}}{306}{section.5.28}
+\contentsline {section}{\numberline {5.29}\textbf {Extrude}: \emph {ExtrudeAttributes()}}{306}{section.5.29}
+\contentsline {section}{\numberline {5.30}\textbf {FFT}: \emph {FFTAttributes()}}{307}{section.5.30}
+\contentsline {section}{\numberline {5.31}\textbf {FilledBoundary}: \emph {FilledBoundaryAttributes()}}{307}{section.5.31}
+\contentsline {section}{\numberline {5.32}\textbf {Flux}: \emph {FluxAttributes()}}{308}{section.5.32}
+\contentsline {section}{\numberline {5.33}\textbf {Font}: \emph {FontAttributes()}}{308}{section.5.33}
+\contentsline {section}{\numberline {5.34}\textbf {Global}: \emph {GlobalAttributes()}}{309}{section.5.34}
+\contentsline {section}{\numberline {5.35}\textbf {Histogram}: \emph {HistogramAttributes()}}{310}{section.5.35}
+\contentsline {section}{\numberline {5.36}\textbf {IndexSelect}: \emph {IndexSelectAttributes()}}{311}{section.5.36}
+\contentsline {section}{\numberline {5.37}\textbf {IntegralCurve}: \emph {IntegralCurveAttributes()}}{311}{section.5.37}
+\contentsline {section}{\numberline {5.38}\textbf {InverseGhostZone}: \emph {InverseGhostZoneAttributes()}}{314}{section.5.38}
+\contentsline {section}{\numberline {5.39}\textbf {Isosurface}: \emph {IsosurfaceAttributes()}}{315}{section.5.39}
+\contentsline {section}{\numberline {5.40}\textbf {Isovolume}: \emph {IsovolumeAttributes()}}{315}{section.5.40}
+\contentsline {section}{\numberline {5.41}\textbf {Keyframe}: \emph {KeyframeAttributes()}}{316}{section.5.41}
+\contentsline {section}{\numberline {5.42}\textbf {LCS}: \emph {LCSAttributes()}}{316}{section.5.42}
+\contentsline {section}{\numberline {5.43}\textbf {Label}: \emph {LabelAttributes()}}{318}{section.5.43}
+\contentsline {section}{\numberline {5.44}\textbf {Lagrangian}: \emph {LagrangianAttributes()}}{319}{section.5.44}
+\contentsline {section}{\numberline {5.45}\textbf {Light}: \emph {LightAttributes()}}{320}{section.5.45}
+\contentsline {section}{\numberline {5.46}\textbf {LimitCycle}: \emph {LimitCycleAttributes()}}{320}{section.5.46}
+\contentsline {section}{\numberline {5.47}\textbf {Lineout}: \emph {LineoutAttributes()}}{323}{section.5.47}
+\contentsline {section}{\numberline {5.48}\textbf {Material}: \emph {MaterialAttributes()}}{323}{section.5.48}
+\contentsline {section}{\numberline {5.49}\textbf {Mesh}: \emph {MeshAttributes()}}{324}{section.5.49}
+\contentsline {section}{\numberline {5.50}\textbf {MeshManagement}: \emph {MeshManagementAttributes()}}{325}{section.5.50}
+\contentsline {section}{\numberline {5.51}\textbf {Molecule}: \emph {MoleculeAttributes()}}{326}{section.5.51}
+\contentsline {section}{\numberline {5.52}\textbf {MultiCurve}: \emph {MultiCurveAttributes()}}{327}{section.5.52}
+\contentsline {section}{\numberline {5.53}\textbf {MultiresControl}: \emph {MultiresControlAttributes()}}{330}{section.5.53}
+\contentsline {section}{\numberline {5.54}\textbf {OnionPeel}: \emph {OnionPeelAttributes()}}{331}{section.5.54}
+\contentsline {section}{\numberline {5.55}\textbf {ParallelCoordinates}: \emph {ParallelCoordinatesAttributes()}}{331}{section.5.55}
+\contentsline {section}{\numberline {5.56}\textbf {PersistentParticles}: \emph {PersistentParticlesAttributes()}}{332}{section.5.56}
+\contentsline {section}{\numberline {5.57}\textbf {Poincare}: \emph {PoincareAttributes()}}{332}{section.5.57}
+\contentsline {section}{\numberline {5.58}\textbf {Printer}: \emph {PrinterAttributes()}}{335}{section.5.58}
+\contentsline {section}{\numberline {5.59}\textbf {Process}: \emph {ProcessAttributes()}}{336}{section.5.59}
+\contentsline {section}{\numberline {5.60}\textbf {Project}: \emph {ProjectAttributes()}}{336}{section.5.60}
+\contentsline {section}{\numberline {5.61}\textbf {Pseudocolor}: \emph {PseudocolorAttributes()}}{336}{section.5.61}
+\contentsline {section}{\numberline {5.62}\textbf {RadialResample}: \emph {RadialResampleAttributes()}}{339}{section.5.62}
+\contentsline {section}{\numberline {5.63}\textbf {Reflect}: \emph {ReflectAttributes()}}{339}{section.5.63}
+\contentsline {section}{\numberline {5.64}\textbf {Rendering}: \emph {RenderingAttributes()}}{340}{section.5.64}
+\contentsline {section}{\numberline {5.65}\textbf {Replicate}: \emph {ReplicateAttributes()}}{341}{section.5.65}
+\contentsline {section}{\numberline {5.66}\textbf {Resample}: \emph {ResampleAttributes()}}{341}{section.5.66}
+\contentsline {section}{\numberline {5.67}\textbf {Revolve}: \emph {RevolveAttributes()}}{342}{section.5.67}
+\contentsline {section}{\numberline {5.68}\textbf {SPHResample}: \emph {SPHResampleAttributes()}}{343}{section.5.68}
+\contentsline {section}{\numberline {5.69}\textbf {SaveWindow}: \emph {SaveWindowAttributes()}}{343}{section.5.69}
+\contentsline {section}{\numberline {5.70}\textbf {Scatter}: \emph {ScatterAttributes()}}{346}{section.5.70}
+\contentsline {section}{\numberline {5.71}\textbf {Slice}: \emph {SliceAttributes()}}{348}{section.5.71}
+\contentsline {section}{\numberline {5.72}\textbf {SmoothOperator}: \emph {SmoothOperatorAttributes()}}{349}{section.5.72}
+\contentsline {section}{\numberline {5.73}\textbf {SphereSlice}: \emph {SphereSliceAttributes()}}{349}{section.5.73}
+\contentsline {section}{\numberline {5.74}\textbf {Spreadsheet}: \emph {SpreadsheetAttributes()}}{349}{section.5.74}
+\contentsline {section}{\numberline {5.75}\textbf {Stagger}: \emph {StaggerAttributes()}}{350}{section.5.75}
+\contentsline {section}{\numberline {5.76}\textbf {StatisticalTrends}: \emph {StatisticalTrendsAttributes()}}{350}{section.5.76}
+\contentsline {section}{\numberline {5.77}\textbf {SubdivideQuads}: \emph {SubdivideQuadsAttributes()}}{351}{section.5.77}
+\contentsline {section}{\numberline {5.78}\textbf {Subset}: \emph {SubsetAttributes()}}{352}{section.5.78}
+\contentsline {section}{\numberline {5.79}\textbf {SurfaceNormal}: \emph {SurfaceNormalAttributes()}}{352}{section.5.79}
+\contentsline {section}{\numberline {5.80}\textbf {Tensor}: \emph {TensorAttributes()}}{353}{section.5.80}
+\contentsline {section}{\numberline {5.81}\textbf {ThreeSlice}: \emph {ThreeSliceAttributes()}}{353}{section.5.81}
+\contentsline {section}{\numberline {5.82}\textbf {Threshold}: \emph {ThresholdAttributes()}}{354}{section.5.82}
+\contentsline {section}{\numberline {5.83}\textbf {Transform}: \emph {TransformAttributes()}}{354}{section.5.83}
+\contentsline {section}{\numberline {5.84}\textbf {TriangulateRegularPoints}: \emph {TriangulateRegularPointsAttributes()}}{355}{section.5.84}
+\contentsline {section}{\numberline {5.85}\textbf {Truecolor}: \emph {TruecolorAttributes()}}{356}{section.5.85}
+\contentsline {section}{\numberline {5.86}\textbf {Tube}: \emph {TubeAttributes()}}{356}{section.5.86}
+\contentsline {section}{\numberline {5.87}\textbf {Vector}: \emph {VectorAttributes()}}{356}{section.5.87}
+\contentsline {section}{\numberline {5.88}\textbf {View}: \emph {ViewAttributes()}}{358}{section.5.88}
+\contentsline {section}{\numberline {5.89}\textbf {View2D}: \emph {View2DAttributes()}}{358}{section.5.89}
+\contentsline {section}{\numberline {5.90}\textbf {View3D}: \emph {View3DAttributes()}}{359}{section.5.90}
+\contentsline {section}{\numberline {5.91}\textbf {ViewAxisArray}: \emph {ViewAxisArrayAttributes()}}{359}{section.5.91}
+\contentsline {section}{\numberline {5.92}\textbf {ViewCurve}: \emph {ViewCurveAttributes()}}{359}{section.5.92}
+\contentsline {section}{\numberline {5.93}\textbf {Volume}: \emph {VolumeAttributes()}}{360}{section.5.93}
+\contentsline {chapter}{\numberline {6}VisIt CLI Events}{365}{chapter.6}
+\contentsline {chapter}{\numberline {7}Acknowledgments}{373}{chapter.7}
