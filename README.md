@@ -37,3 +37,17 @@ To generate attributes, events, and functions, simply run the sphinx\_extractor 
     python sphinx_extractor.py path/to/visit/src/bin
 
 Once done, the appropriate files will be updated or written if neccessary. 
+
+### Local Sphinx Build 
+The top-level `conf.py` file is setup for smooth RTD integration. There is some additional config
+in the `testing/conf.py` file to support extra stuff in local builds. RTD uses only the top-level
+`conf.py` file so please take care in changing it as it could break RTD builds.
+
+To run sphinx-build locally including any local, specific configuration settings, do so like so
+
+    sphinx-build -c . -c testing -a -b html . _static
+
+The `-c` options specify a directory name where to find a `conf.py` file. The multiple
+`-c` options are processed in order causing the configuration options in the cooresponding
+`conf.py` files specified later on the command line to override options from files specified
+earlier.
