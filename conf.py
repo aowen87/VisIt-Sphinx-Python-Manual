@@ -36,8 +36,23 @@ if '-b' in sys.argv and 'spelling' in sys.argv:
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = []
+
+#
+# Support for spell checking
+#
 if BuilderIsSpelling:
     extensions += ['sphinxcontrib.spelling']
+    spelling_filters = []
+    has_spelling_filters = False
+    sys.path.append(os.getcwd())
+    try:
+        from spelling_filters import VisItPythonSymbolFilter
+        has_spelling_filters = True
+    except:
+        print "Warning: Custom spelling filters are disabled"
+        pass
+    if has_spelling_filters:
+        spelling_filters += [VisItPythonSymbolFilter]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

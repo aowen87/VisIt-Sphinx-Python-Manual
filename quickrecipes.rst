@@ -86,7 +86,7 @@ Setting the output image characteristics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 VisIt provides a number of options for saving files, including:
-fileformat, filename, and image size, to name a few. These attributes
+format, fileName, and image width and height, to name a few. These attributes
 are grouped into the SaveWindowAttributes object. To set the options
 that VisIt uses to save files, you must create a SaveWindowAttributes
 object, change the necessary attributes, and call the
@@ -94,7 +94,7 @@ SetSaveWindowAttributes function. Note that if you want to create images
 using a specific image resolution, the best way is to use the
 *-geometry* command line argument with VisIt’s Command Line Interface
 and tell VisIt to use screen capture. If you instead require your script
-to be capable of saving everal different image sizes then you can turn
+to be capable of saving several different image sizes then you can turn
 off screen capture and set the image resolution in the
 SaveWindowAttributes object.
 
@@ -256,7 +256,7 @@ is to be plotted and creates a new plot and adds it to the plot list.
 The name of the plot to be created corresponds to the name of one of
 VisIt’s plot plugins, which can be queried using the PlotPlugins
 function. The variable that you pass to the AddPlot function must be a
-valid variable for the opend atabase. New plots are not realized,
+valid variable for the opened database. New plots are not realized,
 meaning that they have not been submitted to the compute engine for
 processing. If you want to force VisIt to process the new plot you must
 call the DrawPlots function.
@@ -478,7 +478,7 @@ Pick
 ~~~~
 
 VisIt allows you to pick on cells, nodes, and points within a database
-and reutrn information for the item of interest. To that end, VisIt
+and return information for the item of interest. To that end, VisIt
 provides several pick functions. Once a pick function has been called,
 you can call the GetPickOutput function to get a string that contains
 the pick information. The information in the string could be used for a
@@ -630,7 +630,7 @@ View
 
 Setting up the view in your Python script is one of the most important
 things you can do to ensure the quality of your visualization because
-the view concentrates attention on an object or inferest. VisIt provides
+the view concentrates attention on an object of interest. VisIt provides
 different methods for setting the view, depending on the dimensionality
 of the plots in the visualization window but despite differences in how
 the view is set, the general procedure is basically the same.
