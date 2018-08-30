@@ -24,3 +24,9 @@ VisIt Python Interface Manual
     attributes
     events
     acknowledgments
+
+.. Indices and tables
+.. ==================
+
+.. * :ref:`genindex`
+.. * :ref:`search`
