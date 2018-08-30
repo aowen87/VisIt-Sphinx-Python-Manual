@@ -106,7 +106,7 @@ class Table(object):
                 is_ext        = False
                 col_one       = col_one.strip()
                 count         = len(words[0])
-                col_two       = " | %s%s" % (italic_insert, words[0])
+                col_two       = " %s%s" % (italic_insert, words[0])
 
                 for i in range(1, len(words)):
 
@@ -121,7 +121,7 @@ class Table(object):
                         nxt_row.is_extension = is_ext
                         self.table_rows.append(nxt_row)
                         col_one = ""
-                        col_two = " | %s%s" % (italic_insert, words[i]) 
+                        col_two = " %s%s" % (italic_insert, words[i]) 
                         count   = len(words[i])
                         if not is_ext:
                             is_ext = True
@@ -255,6 +255,115 @@ class Table(object):
     
         return table
 
+    def build_sphinx_defn_list(self, title=False, indent=True, one_line=False):
+        """
+            Build a sphinx formated definition list from a 2-column table. 
+            If table is more than two columns, fall back to normal table.
+    
+            args:
+                title: is the first line of our column a title?
+
+                indent: should we indent the entire table? 
+    
+            returns: 
+                A string form of a sphinx definition list. 
+        """
+
+        num_rows = len(self.table_rows)
+    
+        if num_rows <= 0 or type(self.table_rows[0]) != Row:
+            print("ERROR: rows must be > 0 and of type Row")
+            return ""
+        if len(self.table_rows[0]) <= 0:
+            print("ERROR: cannot build an empty table")
+            return ""
+    
+        num_cols = len(self.table_rows[0])
+
+        if num_cols > 2:
+            print("ERROR: cannot build defn list from >2 col table")
+            return build_sphinx_table(self, title, indent)
+
+        #
+        # Now we can build the actual table. 
+        #
+        table = ""
+        start = 0
+        if title:
+            start += 1
+
+        term_list = []
+        for i in range(start, num_rows):
+            term = self.table_rows[i][0]
+            next_term = ""
+            if i < num_rows-1:
+                next_term = self.table_rows[i+1][0]
+            if one_line:
+                if term and next_term:
+                    table += '\n' # end the last line
+                    table += '  - **%s**: %s' % (term, self.table_rows[i][1])
+                    term_list = []
+                elif term:
+                    tmp = self.table_rows[i][1]
+                    if '.'.join(tmp.split('.')[:-1]) == '.'.join(term.split('.')[:-1]):
+                        tmp = tmp.split('.')[-1]
+                    table += '\n' # end the last line
+                    table += '  - **%s**: *%s*' % (term, tmp)
+                    term_list = [tmp]
+                else:
+                    tmp = self.table_rows[i][1].replace('*','')
+                    if tmp not in term_list:
+                        table += ', %s'%tmp
+                        term_list += [tmp]
+            else:
+                if term:
+                    table += '%s:\n'%term
+                table += '  %s\n'%self.table_rows[i][1]
+
+        return table
+
+    def build_sphinx_example_block(self, title=False, indent=True):
+        """
+            Build a sphinx formated example block from a 1-column table. 
+            If table is more than one columns, fall back to normal table.
+    
+            args:
+                title: is the first line of our column a title?
+
+                indent: should we indent the entire table? 
+    
+            returns: 
+                A string form of a sphinx definition list. 
+        """
+
+        num_rows = len(self.table_rows)
+    
+        if num_rows <= 0 or type(self.table_rows[0]) != Row:
+            print("ERROR: rows must be > 0 and of type Row")
+            return ""
+        if len(self.table_rows[0]) <= 0:
+            print("ERROR: cannot build an empty table")
+            return ""
+    
+        num_cols = len(self.table_rows[0])
+
+        if num_cols > 1:
+            print("ERROR: cannot build example block from >1 col table")
+            return build_sphinx_table(self, title, indent)
+
+        #
+        # Now we can build the actual table. 
+        #
+        table = '::\n\n'
+        start = 0
+        if title:
+            start += 1
+
+        for i in range(start, num_rows):
+            table += '  %s\n'%self.table_rows[i][0]
+
+        return table
+
 
 class ArgumentsContainer(object):
     """
@@ -262,8 +371,8 @@ class ArgumentsContainer(object):
         arguments of a function. 
     """
 
-    def __init__(self, title = 'Arguments:'):
-        self.title           = "| **%s**\n" % (title)
+    def __init__(self, title = ''):
+        self.title           = title
         self.names           = []
         self.descriptions    = []
         self.cur_idx         = -1
@@ -412,8 +521,10 @@ class ArgumentsContainer(object):
             name    = "%s" % (self.names[i].strip())
             table.insert_two_columns(name, self.descriptions[i])
 
-        output = self.title
-        output += "\n%s\n\n" % (table.build_sphinx_table())
+        output = ''
+        if self.title:
+            output = self.title
+        output += "\n%s" % (table.build_sphinx_defn_list())
 
         return output
 
@@ -423,9 +534,9 @@ class SynopsisContainer(object):
         A container to hold and format a function synopsis. 
     """
  
-    def __init__(self, title = "Synopsis:"):
+    def __init__(self, title = ''):
         self.synopsis   = ""
-        self.title      = "| **%s**\n" % (title)
+        self.title      = title
         self.table = Table()
 
     def extend_current_synopsis(self, extension):
@@ -446,8 +557,10 @@ class SynopsisContainer(object):
             returns:
                 A restructuredText formatted string. 
         """
-        output  = self.title
-        output += "\n%s\n\n" % (self.table.build_sphinx_table())
+        output = ''
+        if self.title:
+            output  = self.title
+        output += "\n%s\n\n" % (self.table.build_sphinx_example_block())
         return output
 
 
@@ -457,8 +570,8 @@ class ReturnsContainer(object):
         information of a function. 
     """
 
-    def __init__(self, title = "Returns:"):
-        self.title   = "| **%s**\n" % (title)
+    def __init__(self, title = "Returns"):
+        self.title   = title
         self.returns = ""
 
     def extend_current_returns(self, extension):
@@ -468,7 +581,7 @@ class ReturnsContainer(object):
             args:
                 extension: the extension to add on. 
         """
-        self.returns += "| %s\n" % (extension)
+        self.returns += '  %s\n' % (extension)
 
     def __str__(self):
         """
@@ -479,8 +592,8 @@ class ReturnsContainer(object):
             returns:
                 A restructuredText formatted string. 
         """
-        output  = self.title
-        output += self.returns
+        output  = '%s:\n'%self.title
+        output += '%s\n'%self.returns
         return output
 
 
@@ -490,8 +603,8 @@ class DescriptionContainer(object):
         a function. 
     """
 
-    def __init__(self, title = "Description:"):
-        self.title       = "| **%s**\n" % (title)
+    def __init__(self, title = ""):
+        self.title       = title
         self.description = ""
         self.table = Table()
 
@@ -518,7 +631,7 @@ class DescriptionContainer(object):
         # It's just a description.
         #
         else:
-            self.description += "    %s\n" % (extension)
+            self.description += "%s\n" % (extension)
 
     def __str__(self):
         """
@@ -529,13 +642,15 @@ class DescriptionContainer(object):
             returns:
                 A restructuredText formatted string. 
         """
-        output  = self.title
-        output += "|\n"
+        output = ""
+        if self.title:
+            output += self.title
+            output += "\n"
         output += self.description
 
         if self.table.table_rows != []:
-            output += "|\n\n%s\n" % (self.table.build_sphinx_table(title=True))
-        output += "\n|\n"
+            output += "\n\n%s\n" % (self.table.build_sphinx_table(title=True))
+        output += "\n"
 
         return output
 
@@ -545,8 +660,8 @@ class ExampleContainer(object):
         A container to hold and format a function example. 
     """
 
-    def __init__(self, title = "Example:"):
-        self.title    = "| **%s**\n" % (title)
+    def __init__(self, title = ""):
+        self.title    = title
         self.example  = ""
 
     def extend_current_example(self, extension):
@@ -562,9 +677,9 @@ class ExampleContainer(object):
         # format. 
         #
         if "visit -cli" in extension.strip() and self.example == "":
-            self.example += "        #%s\n" % (extension)
+            self.example += "    #%s\n" % (extension)
         else: 
-            self.example += "        %s\n" % (extension)
+            self.example += "    %s\n" % (extension)
 
     def __str__(self):
         """
@@ -575,8 +690,10 @@ class ExampleContainer(object):
             returns:
                 A restructuredText formatted string. 
         """
-        output  = "\n%s" % (self.title)
-        output += "|\n\n    ::\n\n"
+        output = ""
+        if self.title:
+            output  = "%s\n" % (self.title)
+        output += "::\n\n"
         output += self.example
         return output 
 
@@ -646,11 +763,12 @@ class AttributesTable(Table):
                 A restructuredText formatted string. 
         """
         char_count  = len(self.attribute) * 2
-        char_count += len("****: *Attributes()*")
+        char_count += len("Attributes()")
 
-        output      = "**%s**: *%sAttributes()*\n" % (self.attribute, self.attribute)
+        output      = ".. _%sAttributes:\n\n"%self.attribute
+        output     += "%sAttributes()\n"%self.attribute
         output     += '-' * char_count
-        output     += "\n|\n\n%s\n" % (self.build_sphinx_table(title=True))
+        output     += "\n\n%s\n" % (self.build_sphinx_defn_list(title=True, one_line=True))
 
         return output
 
@@ -702,7 +820,8 @@ def build_function_header(function_name):
     """
     function_name = function_name.strip()
     num_char      = len(function_name)
-    header        = function_name + '\n'
+    header        = '.. _%s:\n\n' % (function_name)
+    header       += function_name + '\n'
     header       += "-"*num_char + '\n\n'
     return header
 
@@ -753,7 +872,7 @@ def functions_to_sphinx(funclist):
         #
         # Ignore the brief explanation
         #
-        while full_doc[start].strip() not in block_list and start < len(full_doc):
+        while start < len(full_doc) and full_doc[start].strip() not in block_list:
             start += 1
         full_doc = full_doc[start:]
     
@@ -814,13 +933,12 @@ def functions_to_sphinx(funclist):
         output = build_function_header(func_name)
         if block_dict['Synopsis:']:
             output += str(block_dict['Synopsis:'])
-            output += '|\n'
+            output += '\n'
         if block_dict['Arguments:']:
             output += str(block_dict['Arguments:'])
-            output += '|\n'
         if block_dict['Returns:']:
             output += str(block_dict['Returns:'])
-            output += '|\n'
+            output += '\n'
         if block_dict['Description:']:
             output += str(block_dict['Description:'])
             output += '\n'
@@ -900,7 +1018,7 @@ def attributes_to_sphinx(atts):
                 print >> sys.stderr, "\nERROR: MISSING CASE!"
                 print >> sys.stderr, "LINE: " + str(line) + "\n"
     
-        attributes_doc += "\n|\n\n%s\n|\n" % (str(table))
+        attributes_doc += "\n%s\n" % (str(table))
 
     return attributes_doc
 
@@ -963,9 +1081,9 @@ if __name__ == '__main__':
     # the Eval* functions in the visit-namespace.
     #
     
-    visit.AddArgument("-nowin")
-    visit.AddArgument("-noconfig")
-    visit.Launch()
+#    visit.AddArgument("-nowin")
+#    visit.AddArgument("-noconfig")
+#    visit.Launch()
     print >> sys.stderr, "**\n**  Running VisIt", visit.Version(), "\n**"
     
     for func in dir(visit):
