@@ -1116,7 +1116,7 @@ if __name__ == '__main__':
     attrlist.sort()
     event_names = visit.GetCallbackNames()
     
-    template = "\n\n%s|\n|\n%s"
+    template = "\n%s\n%s"
 
     func_doc, _ = functions_to_sphinx(funclist)
     func_doc    = template % (func_preamble, func_doc)

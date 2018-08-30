@@ -1,9 +1,7 @@
 
-
 Functions
 =========
-|
-|
+
 
 .. _ActivateDatabase:
 
@@ -9693,14 +9691,7 @@ typeAsInt:
    Precision type specified as an integer. 0 = float 1 =
    native 2 = double
 typeAsString:
-  
-Options::
-  
-"float":
-  
-"native":
-  
-"double":
+   "float", "native", "double"
   
 Returns:
   The SetPrecisionType function does not return a value.

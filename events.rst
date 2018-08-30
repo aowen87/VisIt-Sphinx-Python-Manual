@@ -1,5 +1,4 @@
 
-
 VisIt CLI Events
 ================
 
@@ -16,8 +15,7 @@ displays each event or callback name. The right column, labeled
 *GetCallbackArgumentCount(EventName)* for the corresponding event, which
 returns the number of arguments a callback function for that event
 should accept.
-|
-|
+
 
 |
 

@@ -1,20 +1,18 @@
 
-
 Attribute Reference
 ===================
 
 This chapter shows all the attributes that can be set to control the
 behavior of VisIt. The attributes themselves are not documented, but
-their names are usually quite explanatory. When an attribute can have
-values from a given list of options, the default option is printed
+their names are usually quite explanatory. When a member of an attribute
+can take values from a given list of options, the default option is printed
 first in italic followed by a comma separated list of the other available
 options.
 
 The listing is ordered in alphabetical ordering of the name of the
 attribute set. For each set the function that will provide you with
 these attributes is printed in italic.
-|
-|
+
 
 .. _AMRStitchCellAttributes:
 
@@ -880,7 +878,7 @@ IntegralCurveAttributes()
 --------------------------------------
 
 
-  - **sourceType**: *Point*, PointList, Line_, Circle, Plane, Sphere, Box, Selection, FieldData
+  - **sourceType**: *Point*, PointList, Line, Circle, Plane, Sphere, Box, Selection, FieldData
   - **pointSource**: (0, 0, 0)
   - **lineStart**: (0, 0, 0)
   - **lineEnd**: (1, 0, 0)
@@ -1362,7 +1360,17 @@ MultiCurveAttributes()
   - **defaultPalette.categoryName**: "Standard"
   - **changedColors**: ()
   - **colorType**: *ColorByMultipleColors*, ColorBySingleColor
-  - **singleColor**: *(255, 0, 0, 255)*,  SetMultiColor(0,,  (255, 0, 0, 255)),  SetMultiColor(1, (0,,  255, 0, 255)),  SetMultiColor(2, (0,,  0, 255, 255)),  SetMultiColor(3, (0,,  255, 255, 255)),  SetMultiColor(4,,  (255, 0, 255, 255)),  SetMultiColor(5,,  (255, 255, 0, 255)),  SetMultiColor(6,,  (255, 135, 0, 255)),  SetMultiColor(7,,  (255, 0, 135, 255)),  SetMultiColor(8,,  (168, 168, 168, 255)),  SetMultiColor(9,,  (255, 68, 68, 255)),  SetMultiColor(10,,  (99, 255, 99, 255)),  SetMultiColor(11,,  (99, 99, 255, 255)),  SetMultiColor(12,,  (40, 165, 165, 255)),  SetMultiColor(13,,  (255, 99, 255, 255)),  SetMultiColor(14,,  (255, 255, 99, 255)),  SetMultiColor(15,,  (255, 170, 99, 255))
+  - **singleColor**: *(255, 0, 0, 255)*,
+    - SetMultiColor(0, (255, 0, 0, 255))
+    - SetMultiColor(1, (0, 255, 0, 255))
+    - SetMultiColor(2, (0, 0, 255, 255))
+    - SetMultiColor(3, (0, 255, 255, 255))
+    - SetMultiColor(4, (255, 0, 255, 255))
+    - SetMultiColor(5, (255, 255, 0, 255))
+    - SetMultiColor(6, (255, 135, 0, 255))
+    - SetMultiColor(7, (255, 0, 135, 255))
+    - SetMultiColor(8, (168, 168, 168, 255))
+    - SetMultiColor(9, (255, 68, 68, 255))
   - **lineStyle**: *SOLID*, DASH, DOT, DOTDASH
   - **lineWidth**: 0
   - **yAxisTitleFormat**: "%g"

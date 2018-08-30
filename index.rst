@@ -3,11 +3,11 @@
 VisIt Python Interface Manual
 =============================
 
-| |image|
+|image|
 
 --------------
 
-| Version 2.10.0
+Version 2.10.0
 
 --------------
 
@@ -24,9 +24,3 @@ VisIt Python Interface Manual
     attributes
     events
     acknowledgments
-
-.. Indices and tables
-.. ==================
-
-.. * :ref:`genindex`
-.. * :ref:`search`
